@@ -20,15 +20,21 @@ h1 {
 
 /* Box Model */
 .box {
-    border: 5px solid blue;      /* 5px blue border */
-    padding: 20px;               /* 20px padding */
-    margin: 20px;                /* 20px margin */
-    background-color: lightgray; /* Light gray background */
+    border: 5px solid blue;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightgray;
 
-    width: 300px;                /* Width for experiment */
-    height: 150px;               /* Height for experiment */
+    width: 300px;
+    height: 150px;
 
-    box-sizing: border-box;      /* Includes padding and border in width/height */
+    box-sizing: border-box;
+}
+
+/* Second box */
+.box2 {
+    width: 400px;
+    height: 200px;
 }
 </style>
 
@@ -43,7 +49,7 @@ h1 {
 </div>
 
 <!-- Second box for the experiment -->
-<div class="box">
+<div class="box box2">
     <p>This is another box to show how margins create space between elements.</p>
 </div>
 
