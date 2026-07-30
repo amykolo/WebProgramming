@@ -12,12 +12,14 @@
       font-family: Georgia, serif;
       background-color: #f7f1e3;
       color: #4b2e2e;
+
       display: grid;
       grid-template-areas:
         "header"
         "nav"
         "main"
         "footer";
+
       grid-template-rows: auto auto 1fr auto;
       min-height: 100vh;
     }
@@ -35,6 +37,7 @@
       margin: 0;
       font-size: 2.5em;
     }
+
 
     /* Navigation */
     .nav {
@@ -61,6 +64,7 @@
       text-decoration: underline;
     }
 
+
     /* Main Content */
     .main-content {
       grid-area: main;
@@ -68,7 +72,7 @@
       text-align: center;
     }
 
-    /* Flexbox */
+    /* Flexbox for Coffee Items */
     .flex-container {
       display: flex;
       justify-content: space-evenly;
@@ -88,6 +92,18 @@
       box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
     }
 
+
+    /* About and Contact Sections */
+    section {
+      background-color: #fff8e7;
+      padding: 20px;
+      margin: 25px auto;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    }
+
+
     /* Footer */
     .footer {
       grid-area: footer;
@@ -96,6 +112,7 @@
       text-align: center;
       padding: 15px;
     }
+
 
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -115,15 +132,18 @@
       }
 
     }
+
   </style>
 
 </head>
+
 <body>
 
   <header class="header">
     <h1>Java Haven</h1>
     <p>Your daily dose of caffeine and comfort.</p>
   </header>
+
 
   <nav class="nav">
     <ul>
@@ -133,7 +153,9 @@
     </ul>
   </nav>
 
-  <main class="main-content">
+
+  <main id="menu" class="main-content">
+
     <h2>Featured Coffees</h2>
 
     <div class="flex-container">
@@ -143,11 +165,32 @@
       <div class="flex-item">Mocha</div>
     </div>
 
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Java Haven is a cozy coffee shop dedicated to serving fresh coffee
+        and creating a comfortable place for everyone to relax.
+      </p>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Visit us anytime for your favorite coffee drinks.
+        Email: info@javahaven.com
+      </p>
+    </section>
+
+
   </main>
+
 
   <footer class="footer">
     <p>&copy; 2025 Java Haven. All Rights Reserved.</p>
   </footer>
+
 
 </body>
 </html>
